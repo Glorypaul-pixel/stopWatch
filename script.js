@@ -29,5 +29,5 @@ function watchStop() {
 function watchReverse() {
   clearInterval(timer);
   [seconds, minutes, hours] = [0, 0, 0];
-  displayTime.innerHTML = "00:00:00";
+  displayTime.innerHTML = "<h1>" + "00:00:00" + "</h1>";
 }
