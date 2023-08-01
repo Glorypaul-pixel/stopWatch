@@ -14,39 +14,125 @@ main {
   flex-direction: column;
   margin: 0 auto;
   padding: 3rem;
-  margin: 15rem 4rem;
+  margin: 11rem 4rem;
   color: white;
   background-color: black;
   border-radius: 2rem;
 }
-
+#time h1 {
+  margin-top: 29px;
+  font-size: 4rem;
+  font-weight: 300;
+}
 #icons {
   cursor: pointer;
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: space-between;
-  padding: 0.9rem 7rem;
+  margin: 0 auto;
+  width: 20%;
 }
 .play {
   color: white;
-  font-size: 1.5rem;
-  width: 3rem;
+  font-size: 2rem;
+  width: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  height: 3rem;
+  height: 5rem;
   background: red;
   border-radius: 50%;
 }
 .stop,
 .reverse {
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   border: 2px solid white;
   border-radius: 50%;
   display: flex;
   align-items: center;
+  font-size: 1.5rem;
   justify-content: center;
+}
+@media only screen and (max-width: 1100px) {
+  #icons {
+    width: 40%;
+    padding-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #icons {
+    width: 45%;
+    padding-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #icons {
+    width: 50%;
+    padding-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #icons {
+    width: 60%;
+    padding-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #icons {
+    width: 60%;
+    padding-bottom: 2rem;
+  }
+  main {
+    padding: 1rem;
+    margin: 6rem 2rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #icons {
+    width: 55%;
+    padding-bottom: 2rem;
+  }
+  main {
+    margin: 6rem 2rem;
+  }
+  #time h1 {
+    font-size: 3rem;
+  }
+  .play {
+    font-size: 1.5rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  .stop,
+  .reverse {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 300px) {
+  #icons {
+    width: 60%;
+    padding-bottom: 2rem;
+  }
+  main {
+    margin: 6rem 2rem;
+  }
+  #time h1 {
+    font-size: 2rem;
+  }
+  .play {
+    font-size: 1rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  .stop,
+  .reverse {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.9rem;
+  }
 }

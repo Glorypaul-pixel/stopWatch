@@ -15,11 +15,15 @@
         <h1> 00:00:00 </h1>
       </div>
       <div id="icons">
-        <div class="stop"><i class="fa-solid fa-stop"></i></div>
+        <div class="stop"
+          ><i class="fa-solid fa-stop" onclick=" watchStop()"></i
+        ></div>
         <div onclick="watchStart()" class="play"
           ><i class="fa-solid fa-play"></i
         ></div>
-        <div class="reverse"><i class="fa-solid fa-clock-rotate-left"></i></div>
+        <div class="reverse" onclick="watchReverse()"
+          ><i class="fa-solid fa-clock-rotate-left"></i
+        ></div>
       </div>
     </main>
     <script src="script.js"></script>
